@@ -12,8 +12,8 @@ public class Proveedor{
     @Column(name = "id")
     private Integer id;
 
-    @Column(name = "nip_proveedor", nullable = false)
-    private String nipProveedor;
+    @Column(name = "nit_proveedor", nullable = false)
+    private String nitProveedor;
 
     @Column(name = "nombre", nullable = false)
     private String nombre;

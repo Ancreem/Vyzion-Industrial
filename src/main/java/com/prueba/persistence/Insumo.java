@@ -16,11 +16,14 @@ public class Insumo {
     @Column(name = "id")
     private Integer id;
 
+    @Column(name = "nombre", nullable = false)
+    private String nombre;
+
     @Column(name = "valor_unit", nullable = false)
     private double valorUnit;
 
-    @Column(name = "stock_unit", nullable = false)
-    private double stockUnit;
+    @Column(name = "stock_min", nullable = false)
+    private double stock_min;
 
     @Column(name = "stock_max", nullable = false)
     private double stockMax;

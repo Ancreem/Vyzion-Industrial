@@ -15,6 +15,9 @@ public class DetalleOrden {
     @Column(name = "cantidad_producir", nullable = false)
     private int cantidadProducir;
 
+    @Column(name = "prenda_id", nullable = false)
+    private int prendaId;
+
     @Column(name = "cantidad_producida", nullable = false)
     private int cantidadProducida;
 

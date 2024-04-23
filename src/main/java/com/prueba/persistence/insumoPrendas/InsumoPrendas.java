@@ -6,7 +6,7 @@ import com.prueba.persistence.Prenda;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "detalle_pedido")
+@Table(name = "insumo_prendas")
 public class InsumoPrendas {
 
     @EmbeddedId
