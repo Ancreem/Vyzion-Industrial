@@ -17,4 +17,31 @@ public class TipoProteccion {
 
     @OneToMany(mappedBy = "tipoProteccion", cascade = CascadeType.ALL)
     private List<Prenda> prendas;
+
+    public TipoProteccion() {
+    }
+
+    public List<Prenda> getPrendas() {
+        return prendas;
+    }
+
+    public void setPrendas(List<Prenda> prendas) {
+        this.prendas = prendas;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 }

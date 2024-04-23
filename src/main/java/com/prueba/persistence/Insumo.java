@@ -28,6 +28,56 @@ public class Insumo {
     @Column(name = "stock_max", nullable = false)
     private double stockMax;
 
+    public Insumo() {
+    }
+
+    public Set<Proveedor> getProveedores() {
+        return proveedores;
+    }
+
+    public void setProveedores(Set<Proveedor> proveedores) {
+        this.proveedores = proveedores;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public double getValorUnit() {
+        return valorUnit;
+    }
+
+    public void setValorUnit(double valorUnit) {
+        this.valorUnit = valorUnit;
+    }
+
+    public double getStock_min() {
+        return stock_min;
+    }
+
+    public void setStock_min(double stock_min) {
+        this.stock_min = stock_min;
+    }
+
+    public double getStockMax() {
+        return stockMax;
+    }
+
+    public void setStockMax(double stockMax) {
+        this.stockMax = stockMax;
+    }
 }
 
 

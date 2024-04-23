@@ -23,4 +23,39 @@ public class Departamento {
     @JoinColumn(name="id_pais_fk", nullable = false)
     @ManyToOne(fetch = FetchType.EAGER)
     private Pais pais;
+
+    public Departamento() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public List<Municipio> getMunicipios() {
+        return municipios;
+    }
+
+    public void setMunicipios(List<Municipio> municipios) {
+        this.municipios = municipios;
+    }
+
+    public Pais getPais() {
+        return pais;
+    }
+
+    public void setPais(Pais pais) {
+        this.pais = pais;
+    }
 }

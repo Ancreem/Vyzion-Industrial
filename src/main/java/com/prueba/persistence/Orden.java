@@ -28,6 +28,9 @@ public class Orden {
     @ManyToOne(fetch = FetchType.EAGER)
     private Cliente cliente;
 
+    public Orden() {
+    }
+
     public Integer getId() {
         return id;
     }
@@ -42,5 +45,29 @@ public class Orden {
 
     public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
+    }
+
+    public Empleado getEmpleado() {
+        return empleado;
+    }
+
+    public void setEmpleado(Empleado empleado) {
+        this.empleado = empleado;
+    }
+
+    public Estado getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Estado estado) {
+        this.estado = estado;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 }

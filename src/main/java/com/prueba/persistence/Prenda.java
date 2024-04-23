@@ -39,4 +39,78 @@ public class Prenda {
     @OneToMany(mappedBy = "prenda", cascade = CascadeType.ALL)
     private List<Inventario> inventarios;
 
+    public Prenda() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public double getValorUnitCop() {
+        return valorUnitCop;
+    }
+
+    public void setValorUnitCop(double valorUnitCop) {
+        this.valorUnitCop = valorUnitCop;
+    }
+
+    public double getValorUnitUsd() {
+        return valorUnitUsd;
+    }
+
+    public void setValorUnitUsd(double valorUnitUsd) {
+        this.valorUnitUsd = valorUnitUsd;
+    }
+
+    public Estado getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Estado estado) {
+        this.estado = estado;
+    }
+
+    public TipoProteccion getTipoProteccion() {
+        return tipoProteccion;
+    }
+
+    public void setTipoProteccion(TipoProteccion tipoProteccion) {
+        this.tipoProteccion = tipoProteccion;
+    }
+
+    public Genero getGenero() {
+        return genero;
+    }
+
+    public void setGenero(Genero genero) {
+        this.genero = genero;
+    }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public List<Inventario> getInventarios() {
+        return inventarios;
+    }
+
+    public void setInventarios(List<Inventario> inventarios) {
+        this.inventarios = inventarios;
+    }
 }

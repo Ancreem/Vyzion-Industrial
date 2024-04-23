@@ -25,6 +25,9 @@ public class InsumoPrendas {
     @Column(name = "cantidad", nullable = false)
     private Integer cantidad;
 
+    public InsumoPrendas() {
+    }
+
     public InsumoPrendasId getId() {
         return id;
     }

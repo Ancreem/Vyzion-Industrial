@@ -25,4 +25,38 @@ public class Talla {
     @OneToMany(mappedBy = "talla", cascade = CascadeType.ALL)
     private List<DetalleVenta> DetalleVentas;
 
+    public Talla() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public Set<Inventario> getInventarios() {
+        return inventarios;
+    }
+
+    public void setInventarios(Set<Inventario> inventarios) {
+        this.inventarios = inventarios;
+    }
+
+    public List<DetalleVenta> getDetalleVentas() {
+        return DetalleVentas;
+    }
+
+    public void setDetalleVentas(List<DetalleVenta> detalleVentas) {
+        DetalleVentas = detalleVentas;
+    }
 }

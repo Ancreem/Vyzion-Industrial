@@ -32,4 +32,62 @@ public class Municipio {
     @OneToMany(mappedBy = "municipio", cascade = CascadeType.ALL)
     private List<Empleado> empleados;
 
+    public Municipio() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Departamento getDepartamento() {
+        return departamento;
+    }
+
+    public void setDepartamento(Departamento departamento) {
+        this.departamento = departamento;
+    }
+
+    public List<Empresa> getEmpresas() {
+        return empresas;
+    }
+
+    public void setEmpresas(List<Empresa> empresas) {
+        this.empresas = empresas;
+    }
+
+    public List<Cliente> getClientes() {
+        return clientes;
+    }
+
+    public void setClientes(List<Cliente> clientes) {
+        this.clientes = clientes;
+    }
+
+    public List<Proveedor> getProveedores() {
+        return proveedores;
+    }
+
+    public void setProveedores(List<Proveedor> proveedores) {
+        this.proveedores = proveedores;
+    }
+
+    public List<Empleado> getEmpleados() {
+        return empleados;
+    }
+
+    public void setEmpleados(List<Empleado> empleados) {
+        this.empleados = empleados;
+    }
 }

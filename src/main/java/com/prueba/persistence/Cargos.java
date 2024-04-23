@@ -24,5 +24,38 @@ public class Cargos {
     @OneToMany(mappedBy = "cargos", cascade = CascadeType.ALL)
     private List<Empleado> empleados;
 
+    public Integer getId() {
+        return id;
+    }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public double getSueldoBase() {
+        return sueldoBase;
+    }
+
+    public void setSueldoBase(double sueldoBase) {
+        this.sueldoBase = sueldoBase;
+    }
+
+    public List<Empleado> getEmpleados() {
+        return empleados;
+    }
+
+    public void setEmpleados(List<Empleado> empleados) {
+        this.empleados = empleados;
+    }
+
+    public Cargos() {
+    }
 }

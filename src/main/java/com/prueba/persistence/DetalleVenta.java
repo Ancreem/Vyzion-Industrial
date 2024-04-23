@@ -27,4 +27,55 @@ public class DetalleVenta {
 
     @Column(name = "valor_unit", nullable = false)
     private double valorUnit;
+
+    public DetalleVenta() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Venta getVenta() {
+        return venta;
+    }
+
+    public void setVenta(Venta venta) {
+        this.venta = venta;
+    }
+
+    public Inventario getInventario() {
+        return inventario;
+    }
+
+    public void setInventario(Inventario inventario) {
+        this.inventario = inventario;
+    }
+
+    public Talla getTalla() {
+        return talla;
+    }
+
+    public void setTalla(Talla talla) {
+        this.talla = talla;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    public double getValorUnit() {
+        return valorUnit;
+    }
+
+    public void setValorUnit(double valorUnit) {
+        this.valorUnit = valorUnit;
+    }
 }

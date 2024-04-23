@@ -33,5 +33,54 @@ public class Proveedor{
     )
     private Set<Insumo> insumos;
 
+    public Proveedor() {
+    }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNitProveedor() {
+        return nitProveedor;
+    }
+
+    public void setNitProveedor(String nitProveedor) {
+        this.nitProveedor = nitProveedor;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public TipoPersona getTipoPersona() {
+        return tipoPersona;
+    }
+
+    public void setTipoPersona(TipoPersona tipoPersona) {
+        this.tipoPersona = tipoPersona;
+    }
+
+    public Municipio getMunicipio() {
+        return municipio;
+    }
+
+    public void setMunicipio(Municipio municipio) {
+        this.municipio = municipio;
+    }
+
+    public Set<Insumo> getInsumos() {
+        return insumos;
+    }
+
+    public void setInsumos(Set<Insumo> insumos) {
+        this.insumos = insumos;
+    }
 }

@@ -15,6 +15,9 @@ public class InsumoPrendasId implements Serializable {
     @Column(name = "id_prenda_fk")
     private Integer idPrendaFk;
 
+    public InsumoPrendasId() {
+    }
+
     public Integer getIdInsumoFk() {
         return idInsumoFk;
     }
