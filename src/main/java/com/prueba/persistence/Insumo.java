@@ -2,9 +2,15 @@ package com.prueba.persistence;
 
 import jakarta.persistence.*;
 
+import java.util.Set;
+
 @Entity
 @Table(name = "insumo")
 public class Insumo {
+
+    @ManyToMany(mappedBy = "insumos", fetch = FetchType.EAGER) // Mapped hace referencia a quien va a Mapear
+    private Set<Proveedor> proveedores;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -19,37 +25,6 @@ public class Insumo {
     @Column(name = "stock_max", nullable = false)
     private double stockMax;
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public double getValorUnit() {
-        return valorUnit;
-    }
-
-    public void setValorUnit(double valorUnit) {
-        this.valorUnit = valorUnit;
-    }
-
-    public double getStockUnit() {
-        return stockUnit;
-    }
-
-    public void setStockUnit(double stockUnit) {
-        this.stockUnit = stockUnit;
-    }
-
-    public double getStockMax() {
-        return stockMax;
-    }
-
-    public void setStockMax(double stockMax) {
-        this.stockMax = stockMax;
-    }
 }
 
 
